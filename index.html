@@ -1,38 +1,230 @@
-#!/bin/bash
-set -x
-function usage {
-    echo  "Usage: 
-	$0 [wordpress_site] [backup_path]
-	wordpress_site - path to your  WordPress site for backup it (e.g. /var/www/site.com )
-	backup_path - destination for your backups (e.g. /backup  )
-	";
-	exit 1
-}
-if [ $# -lt 2 ]; then usage; fi
+<!doctype html>
+<html lang="ru">
+<title>Название Магазина</title>
+<head>
+<script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
+	<meta charset="utf-8">
+	<link href="style.css" rel="stylesheet">
 
-wp_src=${1%/}
-bcp_dst=${2%/}
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="https://primearea.biz/shopsite/v1.2/index.php?id=Твой ключ" charset="utf-8"></script>
+	<link href="prime.css" rel="stylesheet">
+</head>
+<body>
+	<div id="maket">
+ 
+		<div id="shap"></div>
+		<div id="middle2">
+<center>
+<a style="color: white;margin-right: 37px;" href="/">Главная</a>
+<a style="color: white;margin-right: 37px;" href="https://primearea.biz/customer/">Мои покупки</a>
+<a style="color: white;margin-right: 37px;" href="Ссылка на группу">Группа</a>
+<a style="color: white;margin-right: 37px;" href="contact.html">Контакты</a>
+</center>
+</div>
 
-db_pass=`cat "$wp_src"/wp-config.php|grep DB_PASSWORD|awk -F \' '{print $4}'`
-db_src=`cat "$wp_src"/wp-config.php|grep DB_NAME|awk -F \' '{print $4}'`
-db_user=`cat "$wp_src"/wp-config.php|grep DB_USER|awk -F \' '{print $4}'`
-db_pref=`cat "$wp_src"/wp-config.php|grep table_prefix|awk -F \' '{print $2}'`
-db_opts="$db_pref"options
-# backup  database
-mkdir -p "$bcp_dst"
-mysqldump -u$db_user -p$db_pass $db_src|gzip > "$bcp_dst"/"$db_src"-`date +%y%m%d_%H%M`".sql.gz"
+		<div id="left">
+<table border="0" cellpadding="0" cellspacing="0" style="width:250px;margin-top: 14px;margin-left: 8px;height:35px;box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+        <tbody>
+            <tr>
+                <td align="center" bgcolor="#457503" onmouseover="this.style.background=&#39;#242527&#39;" onmouseout="this.style.background=&#39;#457503&#39;">
+                    <font size="2" style="color:#fff">
+                        Категории
+                    </font>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+        	
+			<div id="primearea_category">
+    			<div style="text-align:center;"><img src="http://primearea.ru/shopsite/v1.1/img/preloader.gif" alt="Загрузка..."></div>
+    			<noscript>Ваш браузер не поддерживает JavaScript.</noscript>
+			</div>
+			<a href="https://eaassets-a.akamaihd.net/Origin-Client-Download/origin/live/OriginThinSetup.exe">
+    <table class="black" border="0" cellpadding="15" cellspacing="0" style="width:250px;margin-left: 8px;height:50px;margin-top: 20px;background-color: #EC5820;box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+        <tbody>
+            <tr>
+                <td>
+                    <img style="width:50%; margin-left: 5;" alt="" src="image/origin-icon.png">
+                    <a style="text-decoration: none;">
+                        </a></td><td>
+                            <font size="3" style="color:#fff; text-align: left; margin-right: 20;">
+                                КЛИЕНТ ORIGIN
+                            </font>
+                        </td>
+                    
+                
+            </tr>
+        </tbody>
+    </table>
+</a>
 
-wp_domain=`mysql -u$db_user -p$db_pass $db_src -s -N -e "select option_value from  $db_opts  where option_name='home';"|awk -F \/ '{print $3}'`
+<a href="https://steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe">
+    <table class="black" border="0" cellpadding="15" cellspacing="0" style="width:250px;height:50px;margin-left: 8px;background-color: #353330;box-shadow: 0 0 10px rgba(0,0,0,2);">
+        <tbody>
+            <tr>
+                <td>
+                    <img style="width:50%; margin-left: 5;" alt="" src="image/steam-icon.png">
+                    </td><td>
+                        <a style="text-decoration: none;">
+                            <font size="3" style="color:#fff; margin-right: 20;">
+                                
+                                
+                                
+                                
+                                КЛИЕНТ STEAM
+                            </font>
+                        </a></td>
+                
+            
+            
+            
+        
+</tr>
+</tbody>
+</table>
+</a>
+<br>
+    <br>
+    <div class="block">
+        
+        
+        <table border="0" cellpadding="0" cellspacing="0" style="width:200px;margin-left: 8px;height:35px;box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+            <tbody>
+                <tr>
+                    <td align="center" bgcolor="#242527" onmouseover="this.style.background=&#39;#242527&#39;" onmouseout="this.style.background=&#39;#242527&#39;" style="background: rgb(36, 37, 39);">
+                        <font size="2" style="color:#fff">
+                            ЗАМЕНА
+                        </font>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="">
+            <ul id="contacts">
+                <p></p><table border="0" cellpadding="0" cellspacing="0" style="width:200px;margin-left: 8px;height:100px;">
+                    <tbody>
+                        <tr>
+                            <td align="center" bgcolor="#2D2F31" onmouseover="this.style.background=&#39;#202122&#39;" onmouseout="this.style.background=&#39;#2D2F31&#39;" style="background: rgb(45, 47, 49);">
+                                <p style="text-align: left; margin-right: 10px; margin-left: 19px;">
+                                    <font size="2" style="color:#fff">
+                                        <br>
+                                        1 пункт
+                                        <br>
+                                        <br>
+                                        2 пункт
+                                        <br>
+                                        <br>
+                                        3 пункт
+                                        <br>
+                                        <br>
+                                        4 пункт
+                                        <br>
+                                        <br>
+                                        
+                                        <font style="color:#FF4747">
+                                            Доп. Информация
+                                        </font>
+                                        <br>
+                                        <br>
+                                    </font>
+                                </p></td>
+                        
+                </tr>
+            </tbody>
+        </table>
+    </ul>
+</div> 
+    
+    </div></div></aside>
+        </div>
+    </ul>
+		<div id="content">
+			<div id="primearea_main">
+    			<div style="text-align:center;"><img src="http://primearea.ru/shopsite/v1.1/img/preloader.gif" alt="Загрузка..."></div>
+    			<noscript>Ваш браузер не поддерживает JavaScript.</noscript>
+			</div>
+		</div>
+		<div id="right">
+        <br>
+    <table border="0" cellpadding="0" cellspacing="0" style="width:200px;margin-left: 12px;height:35px;box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+        <tbody>
+            <tr>
+                <td align="center" bgcolor="#457503" onmouseover="this.style.background=&#39;#242527&#39;" onmouseout="this.style.background=&#39;#457503&#39;">
+                    <font size="2" style="color:#fff">
+                        ДЛЯ ПОКУПАТЕЛЯ
+                    </font>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+	<div>
+    <div class="block-cont">
+        
+        <p></p><table border="0" cellpadding="0" cellspacing="0" style="width:200px;margin-left: 12px;height:100px;">
+            <tbody>
+                <tr>
+                    <td align="center" bgcolor="#5DA000" onmouseover="this.style.background=&#39;#457503&#39;" onmouseout="this.style.background=&#39;#5DA000&#39;">
+                        <p style="text-align: left; margin-right: 10px; margin-left: 19px;">
+                            <font size="2" style="color:#fff">
+                                Весь товар, продаваемый у нас, проходит строгую проверку перед продажей. Товар продаётся только в одни руки!
+                            </font>
+                        </p></td>
+                
+        </tr>
+    </tbody>
+</table>
 
-# backup files
-wp_dst="$bcp_dst"/"$wp_domain"-`date +%y%m%d_%H%M`
+</div>
 
-mkdir -p "$wp_dst"
-rsync -a --exclude='wp-content/uploads'  "$wp_src"/ "$wp_dst"/
-if [ $? -ne 0 ]; then
-	cp -ra "$wp_src"/* "$wp_src"/.htaccess  "$wp_dst"/
-fi
-
-echo "Резервное копирование завершено"
-ls -lh "$bcp_dst"
-du -sh "$wp_dst"
+<br>
+<table border="0" cellpadding="0" cellspacing="0" style="width: 200px;margin-left: 12px;height:35px;box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+    <tbody>
+        <tr>
+            <td align="center" bgcolor="#A71C12" onmouseover="this.style.background=&#39;#242527&#39;" onmouseout="this.style.background=&#39;#A71C12&#39;" style="background: rgb(167, 28, 18);">
+                <font size="3" style="color:#fff">
+                    ПРАВИЛА
+                </font>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div class="block-cont">
+    <ul id="contacts">
+        <table border="0" cellpadding="0" cellspacing="0" style="width:200px;margin-left: 12px;height:100px;">
+            <tbody>
+                <tr>
+                    <td align="center" bgcolor="#E1291B" onmouseover="this.style.background=&#39;#A71C12&#39;" onmouseout="this.style.background=&#39;#E1291B&#39;" style="background: rgb(225, 41, 27);">
+                        <p style="text-align: left; margin-right: 10px; margin-left: 19px;">
+                            <font size="2" style="color:#fff">
+                                
+                                <br>
+                                1 пункт
+                                <br>
+                                <br>
+                                2 пункт
+                                <br>
+                                <br>
+                                3 пункт
+                                <br>
+                                <br>
+                                4 пункт
+                                <br>
+                                <br>
+                                5 пункт
+                                <br>
+                                <br>
+                            </font>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </ul>
+    
+    
+    
+    
+</div></div></aside>
+</body>
+</html>
